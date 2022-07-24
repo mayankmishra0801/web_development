@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style type="text/css">
+   
+   .animation1{
+        height:100px;
+        width:100px;
+        animation: mation 6s linear infinite;  
+    
+   }
+    
+    @keyframes mation{
+     25%{
+        background:blue;
+    }
+    50%{
+        background: green;
+    }
+    75%{
+        background: yellow;
+    }
+    100%{
+        background: orange;
+    }
+    125%{
+        background: crimson;
+    }
+}
+    
+     .ab{
+         height:100px;
+         width:100px;
+         background: red;
+         opacity:0.4;
+         display:block;
+         display:none;
+         color:white;
+         overflow: scroll;
+         font-size:30px;
+         font-weight:bold;
+         font-family:'Courier New', Courier, monospace;
+         font-style: italic;
+
+         text-indent:100px;
+         text-align:centre;
+         text-shadow: 2px -2px 3px seagreen;
+         text-decoration: line-through;
+         text-transform: uppercase;
+         line-height: 30px;
+         word-spacing: 1px;
+         letter-spacing: 10px;
+         overflow: scroll;
+         float:right;
+         margin-top: 10px;
+         margin-left:10px;
+         padding-left: 50px;
+         padding-right: 10px;
+         border:3px solid green;
+
+         transform:rotate(-10deg);
+         transition:1s;
+         background:url("cow.png");
+         background-size: 100px 100px;
+         background-repeat: no-repeat;
+         background-position: centre;
+         background-color: yellow;
+
+         position:absolute;
+         z-index:2;
+         background:linear-gradient(to left, blue, green);
+         background:radial-gradient(yellow,red);
+         margin:auto;
+         display:flex;
+
+     }
+     .parent{
+         background:red;
+     }
+     .child{
+         background: blue;
+     }
+     .parent:hover .child{
+         display:block;
+     }
+     @media only screen and (max-width :450px){
+         .ab{
+             height:10px;
+             width:150px;
+             background: yellowgreen;
+         }
+     }
+     @media only screen and (max-width:768px){
+         .ab{
+             height:200px;
+             width:100px;
+             background: red;
+         }
+     }
+         
+
+     
+     
+
+
+
+
+     
+
+
+
+</style>
+</head>
+
+<body>
+<p class="animation1"> This is for animation Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugiat quisquam illo eveniet deserunt fuga placeat quos neque, explicabo ratione, blanditiis, nesciunt accusantium distinctio at. Veritatis asperiores esse quod inventore.</div>
+<div class="ab">Heeelo</div>
+<div class="ac">Good</div>
+<div class="parent">Hello</div>
+<div class="child">Hiiii</div>
+
+</body>
+</html>

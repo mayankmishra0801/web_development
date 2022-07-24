@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+
+
+
+<body>
+    <center>
+        <div id ="login-form">
+            <div>
+                <input type ="email" id ="email" placeholder ="Email">
+                <br>
+                <input type="password" id="password" placeholder = "Password">
+                <br>
+                <button onclick = "login()">Login</button>
+            </div>
+        </div>
+    
+    <div id="logout-form">
+        <p id = "print"></p>
+            <button onclick="logout()">Logout</button>
+
+        
+    </div>
+
+    </center>
+
+
+    <script type = "text/javascript">
+        function login(){
+           
+            var a = document.getElementById('email').value;
+            var b = document.getElementById('password').value;
+            console.log(a+b);
+
+            var l = document.getElementById('email').value;
+            var m = document.getElementById('password').value;
+            console.log(l+m);
+            console.log("<br>");
+            console.log(l);
+            console.log("<br>");
+            console.log(m);
+        
+        
+        
+        }
+        function loginhandle(){
+
+            //<button onclick = "display('Mayank')">Click Karo</button>
+            
+        }
+
+        function logout(){
+            
+        }
+    </script>
+
+</body>

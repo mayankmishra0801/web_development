@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+<script type = "text/javascript">
+    //es5
+    var l = 10;
+
+    //es6
+
+    const k = 10;
+    let p = 15;
+
+</script>
+
+
+
+<script type="text/javascript">
+	
+	// es5
+	var a = 10;
+
+	// es6
+	const b = 10;
+	let c = 10;
+
+</script>
+
+
+<button onclick="abc()">Click Me</button>
+<button onclick=" abc()">Click Me</button>
+
+<button onclick="abc('Naveen')">Click Me</button>
+<button onclick = "abc('Raju')">Click Me</button>
+
+<button onclick="abc(this.value)">Click Me</button>
+<button onclick="abc(this.value)">Click Me</button>
+
+<script type = "text/javascript">
+    function abc(x){
+        return 'Hello'+x;
+    }
+    abc();
+</script>
+<script type="text/javascript">
+// es5
+	function abc(x){
+		return 'Hello'+x;
+	}
+	abc();
+</script>
+
+
+<button onclick = "bcd">Click Me</button>
+<button onclick="() => bcd('Naveen')">Click Me</button>
+<button onclck="(e) => bcd(e.target.value)">Click Me</button>
+
+<script type = "text/javascript">
+    //es6
+
+    const bcd = (z) =>{
+        return `hello &{z}`;
+    }
+    bcd;
+
+
+
+</script>
+
+
+
+
+<button onclick="bcd">Click Me</button>
+
+<button onclick="() => bcd('Naveen')">Click Me</button>
+
+<button onclick="(e) => bcd(e.target.value)">Click Me</button>
+
+<script type="text/javascript">
+
+	// es6
+
+	const bcd = (z) => {
+		return `hello ${z}`;
+	}
+
+	bcd;
+
+</script>
+
+<script>
+    var cars = {Name:'Audi A8', Color:'maroon',Price:'$10000'};
+     //es5
+    var val1 = cars.Name;
+    var val2 = cars.Color;
+    var val3 = cars.Price;
+   //es6
+   const {val1,val2,val3} = cars;
+
+   //calling library
+   //es5
+   var express = require('express');
+   //es6
+   import express from 'express';
+
+   //calling file
+
+   //es5
+   var image1 = require('image/1.png');
+   //es6
+   import image1 from './image/1.png';
+
+
+   //es5
+   var image1 = require('image/1.png');
+   //es6
+   import image1 from './image/1.png';
+
+   //
+
+//module export
+modules.exports = image1;
+
+export default image1;
+
+</script>
+
+<script>
+var cars = {Name:'Audi A8', Color: 'maroon', Price:'$10000'};
+// es5
+
+var val1 = cars.Name;
+var val2 = cars.Color;
+var val3 = cars.Price;
+// es6
+
+const {val1,val2,val3} = cars;
+// calling library
+
+	// es5
+	var express = require('express');
+
+	// es6
+	import express from 'express';
+
+
+// calling file
+
+	// es5
+	var image1 = require('image/1.jpg');
+
+	// es6
+	import image1 from './image/1.jpg';
+
+   
+// export module
+
+	// es5
+	module.exports = image1;
+
+	// es6
+	export default image1;
+
+
+	// es5
+	module.exports = image1,image2;
+
+	// es6
+	export {image1, image2};
+
+
+     //es5
+    module.exports = image1,image2;
+    //es6
+    export{image1,image2};
+
+	module.exports = image1,image2;
+	export{image1,image2};
+    
+	// es5
+	query.then(function(succ){
+
+	}).catch(function(err){
+		
+	})
+
+	// es6
+	query.then((succ) => {
+
+	}).catch((err) => {
+
+	})
+       //es5
+    query.then(function(succ){
+
+    }).catch(function(err){
+
+    })
+    //es6
+	query.then((succ) =>{}).catch((err) =>{})
+    
+
+
+
+
+
+	query.try(function(succ){
+
+	}).catch(function(err){})
+	query.try((succ) =>{}).catch((err) =>{})
+
+
+
+
+	// es5
+	query.try(function(succ){
+
+	}).catch(function(err){
+		
+	})
+
+	// es6
+	query.try((succ) => {
+
+	}).catch((err) => {
+
+	})
+
+</script>
+
+</body>
+</html>

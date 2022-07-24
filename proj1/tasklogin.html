@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+       
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Flipkart</div>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Gallary</a></li>
+            </ul>
+ 
+            <ul class="nav navbar-nav navbar-right">
+               <li><a style="cursor:pointer;" data-toggle="modal" data-target="#mymodal1">Login</a></li>
+                <!-- <li><a href="tasklogin.html">Login</a></li> -->
+                 <!-- <li><a href="">Register</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+<button data-toggle="modal" data-target="#mymodal1" class="btn btn-sm">Login Here</button>
+<div class="modal fade" id="mymodal1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">x</button>
+         <h1>Welcome to our page</h1>
+      </div>
+      <div class="modal-body">
+        <center>
+            <div id ="login-form">
+                <div>
+                  <form>
+                      <input type = "text" name="" id ="email" placeholder="Enter your Email" pattern ="^[a-z]+[0-9]*[@](gmail|hotmail|yahoo)[.](com|org)">
+                      <br>
+                      <input type = "password" name="" id = "password" placeholder ="Enter your password" pattern="^[a-z][A-Z][0-9]">
+                      <br>
+                      <input type = "submit" value = "Login">
+                  </form>
+                    
+                    <!-- <button onclick = "login()">Login</button>  -->
+                </div>
+            </div>
+        
+        
+        
+        
+        <div id="logout-form">
+            <p id = "print"></p>
+                <button onclick="logout()">Logout</button>
+                                                           
+
+
+
+        </div>
+    
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

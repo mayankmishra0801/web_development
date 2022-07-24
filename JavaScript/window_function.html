@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick = "pri()">Click</button>
+    <script type = "text/javascript">
+           function pri(){
+               window.print();
+           }
+    </script>
+<script>
+    var str = 'Naveen Singh';
+    document.write('<br>');
+    var eny = window.btoa(str)
+    document.write(eny);
+    document.write('<br>');
+    var dec = window.atob(eny)
+    document.write(dec)
+</script>
+<button onclick = "rel()">Reload</button>
+<p id = "print"></p>
+<script>
+    document.write('<br>');
+    function rel(){
+        loaction.reload()
+    }
+</script>
+
+
+<script>
+    var url = 'page.html?name=nveen singh&class=5';
+    var end = encodeURI(url);
+
+    document.write(end);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.logo img{
+    width:50%;
+    margin:auto;
+    margin-top:30px;
+}
+newpg li a{
+    border: 0px;
+    border-radius:0px;
+}
+.txt{
+    font-weight:bold;
+}
+.outline{
+    background:transparent;
+    color:green;
+}
+.red{
+    color:red;
+}
+.li a{
+    border:0px;
+}

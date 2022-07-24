@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick = 'show("Naveen")'>Click1</button>
+<button onclick = 'show("Raju")'>Click2</button>
+<button onclick = 'show("Ravi")'>Click3</button>
+
+<p id = "gm"></p>
+<script type = "text/javascript">
+      function show(x){
+          window.location.href = '10.html?q='+x; //we put our data in href of  our file name 10.html in URL with click of button having show as a function 
+          //and x as a parameter. 
+      }
+      
+      //q = Naveen
+      //console.log(window.location.search);
+      //var param = newSearchParams(window.location.search);
+      //console.log(param.get('q'));
+
+      var name22 = new URLSearchParams(window.location.search).get('q');//we fetch data using URLSearchParams(window.location.search) 
+      //our data name is q , using get we fetch our data q and store it in variable name.
+      document.getElementById('gm').innerHTML = name22;
+    </script>     
+     <script>
+     var ar = ['Apple','Mango','Banana','Grapes','Kivi','Guava','Lemon','Litchi'];
+     
+    //   console.log(ar);
+    //   ar.shift()
+
+    //   console.log(ar);
+
+
+
+      function letter(x){
+
+          //console.log(x);
+         console.log(x.indexOf('A'));
+          if(x.indexOf('A') == 0){
+
+                   return(x);            
+          }
+      }
+      var arr = ar.filter(letter)
+      console.log(arr);
+      //array get run 
+      //then we filter our data using filter
+      //filter took letter function as an argument 
+      //letter will store that in x
+
+    </script>
+</html>

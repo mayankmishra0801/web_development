@@ -1,0 +1,156 @@
+.div1{
+  background: url("./images/div1burger.jpg");
+  height: 50vh;
+  width: 100%;
+background-size: cover;
+margin-top: 0px;
+
+}
+
+
+.hoh1{
+  color:white;
+  
+  font-weight: 100px;
+  padding-left: 30px;
+  padding-top: 30px;
+
+}
+.hop1{
+  color:white;
+  padding-left: 30px;
+}
+.btn1{
+  padding-top: 40px;
+  padding-left: 30px;
+  
+}
+.btna{
+  background-color: red;
+  border-radius: 30px;
+}
+.div2{
+  padding-bottom: 80px;
+}
+
+.hoh2{
+  color:red;
+  text-align: center;
+  font-weight: bold;
+
+}
+.hop2{
+  color:red;
+  text-align: center;
+  
+}
+.imgh1{
+  color:red;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.imgp1{
+  color: red;
+  text-align: center;
+}
+.d1{
+  background-color: red;
+  
+  
+  
+
+}
+.div3{
+  background: url("./images/burgerdiv3.jpg");
+  
+}
+.div32{
+  
+}
+.div33{
+  padding-left:45%;
+}
+.hoh3{
+  color: rgb(171, 21, 21);
+  font-size: 30px;
+  text-align: center;
+}
+.hop3{
+  color: rgb(171, 21, 21);
+  
+  text-align: center;
+  
+
+}
+.btnth3{
+  padding-left: 30%;
+}
+.div4{
+ background-color: royalblue;
+}
+.div41{
+  
+}
+.c41{
+  padding-top: -100px;
+}
+.c42{
+
+}
+.c43{
+
+}
+.div420{
+  
+  text-align: center;
+}
+.div421{
+
+  text-align: center;
+}
+.btn3{
+  background-color: red;
+  border-radius: 25px;
+  color:red;
+  margin-left: 5px;
+}
+.btnh3{
+  padding-left: 20px;
+}
+
+.div5{
+  background-color: goldenrod;
+ 
+}
+.hop5{
+  color:white;
+  text-align: center;
+  font-size: 20px;
+  
+}
+.hoh5{
+  color:white;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 100px;
+}
+.div6{
+  background-color: antiquewhite;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.hoh6{
+  color: red;
+  padding-top: 100px;
+  text-align: center;
+}
+.hop6{
+   color:red;
+   text-align: center;
+   padding-bottom: 150px;
+}
+.div7{
+ background-color: black;
+}

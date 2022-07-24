@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .div1{
+        background-color: antiquewhite;
+    }
+    
+    .row1{
+        background-color: aqua;
+    }
+    .div4{
+        color:bisque;
+    }
+    .cont1{
+        color:chartreuse;
+    }
+    .fluid1{
+        color:burlywood;
+    }
+
+</style>  
+</head>
+
+
+
+
+
+  <body>
+      <div class = "col-lg-6 div1">
+          <div class = "col-lg-4 div2">This is div2</div>
+          <div class="col-lg-8 div3">This is div3</div>
+      </div>
+
+      <div class="row">
+          <div class="col-lg-6 row1">This is row1</div>
+      </div>
+
+      <div class = "col-lg-6 div4">This is div4</div>
+
+      <div class = "container">
+          <div class="cont1 col-lg-12">this is cont</div>
+      </div>
+
+      <div class="container-fluid">
+           <div class="fluid1 col-lg-12">This is fluid</div>
+      </div>
+
+      <div class="col-lg-6">
+          <button class="btn">Click</button>
+          <button class="btn btn-danger btn-lg">Click1</button>
+      </div>
+
+      <div class="col-lg-4">
+          <button class="btn">Btn Button</button>
+          <button class="btn btn-danger">Danger Button</button>
+          <button class="btn btn-info">Info Button</button>
+          <button class="btn btn-warning">Warning Button</button>
+          <button class="btn btn-default">Default Button</button>
+          <button class="btn btn-link">Link Button</button>
+
+      </div>
+      <div class="col-lg-4">
+          <button class="btn btn-info btn-lg">Large Button</button>
+          <button class="btn btn-info btn-md">Middle Size Button</button>
+          <button class="btn btn-info btn-sm">Small Size Button</button>
+          <button class="btn btn-info btn-xs">Extra small Size button</button>
+
+      </div>
+      
+      <table class="table table-hover table-stripped table-borderd">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Class</th>
+                  <th>Roll No</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Mayank Mishra</td>
+                  <td>Btech IT</td>
+                  <td>1905234</td>
+              </tr>
+              <tr>
+                  <td>Mrinal Mishra</td>
+                  <td>BBA LLB</td>
+                  <td>1921145</td>
+              </tr>
+          </tbody>
+      </table>
+<!--
+      <div class="col-lg-4">
+          <img src ="bag.jpeg" class="img-responsive img-circle">
+          <img src ="bag.jpeg" class="img-responsive img-rounded">
+          <img src ="bag.jpeg" class="img-responsive img-thubnail">
+      </div>
+    -->
+     
+       <div class="row-lg-4">
+           <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Contact</a></li>
+           </ul>
+       </div>
+
+       <div>
+           <ul class="list-group">
+               <li class="list-group-item"><a href="">List Group Home</a></li>
+               <li class="list-group-item"><a href="">List Group About</a></li>
+               <li class="list-group-item"><a href="">List Group Contact</a></li>
+           </ul>
+       </div>
+
+       <div>
+           <ul class="pagination">
+               <li><a href="">Pagination Home</a></li>
+               <li><a href="">Pagination About</a></li>
+               <li><a href="">Pagination Contact</a></li>
+           </ul>
+       </div>
+
+       <div>
+           <ul class="pager">
+               <li><a href="">Pager Home</a></li>
+               <li><a href="">Pager About</a></li>
+               <li><a href="">Pager Contact</a></li>
+           </ul>
+       </div>
+
+
+
+       
+<div>
+    <ul class="breadcrumb">
+        <li><a href="">Breadcrumb Home</a></li>
+        <li><a href="">Breadcrumb About</a></li>
+        <li><a href="">Breadcrumb Contact</a></li>
+    </ul>
+</div>
+
+<div>
+    <ul class="nav nav-tabs">
+        <li><a href="">nav nav-tabs Home</a></li>
+        <li><a href="">nav nav-tab About</a></li>
+        <li class="active"><a href="">Active class Contact</a></li>
+    </ul>
+</div>
+
+<div>
+    <ul class="nav nav-pills">
+        <li><a href="">nav nav-pills Home</a></li>
+        <li class="active"><a href = ""> Active About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</div>
+
+<div class="col-lg-3">
+    <div class="alert alert-danger">We are displaying alert alert-danger</div>
+</div>
+
+<div class="alert alert-warning">This is div class with alert alert-warning</div>
+
+<div class="alert alert-info">This is div class with alert alert-info</div>
+
+<div class="alert alert-success">This is duv class with alert alert success display</div>
+   <!--
+     panel class can be 
+     panel panel-danger
+     panel panel-info
+     panel panel-success
+ -->
+ <div class="col-lg-3">
+     <div class="panel panel-default">
+         <div class="panel-heading">Under div class there is panel panel-default under this threre is panel-heading class</div>
+         <div class="panel-body">This is displayed under panel-body class</div>
+         <div class="panel-footer">This is displayed in footer section in panel-footer</div>
+        </div>
+ </div>
+
+<!--
+    Code for making Collapse
+-->
+
+<button class="btn btn-danger" data-toggle='collapse' data-target='#mycaro1'>Collapse Button</button>
+<div class="alert alert-danger collapse" id="mycaro1">
+   Lorem ipsum dolor sit amet.
+</div>
+ <!--
+     Code for making Modal
+ -->
+ <button  data-toggle = 'modal' data-target="#mymodal" class="btn btn-danger">Modal Is This One</button>
+ <div class="modal fade" id="mymodal" role="dialog">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button class="close" data-dismiss="modal">x</button>
+                 <h2 class="modal-title">Welcome To Tech_World</h2>
+             </div>
+             <div class="modal-body">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est deserunt aut inventore quam maiores ipsam perspiciatis a! Ea, dolore modi?</p>
+             </div>
+             <div class="modal-footer">
+                 <button class="btn btn-danger" data-dismiss="modal">Close</button>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!--
+     Making Dropdown
+ -->
+ <div class="col-lg-4">
+     <div class="dropdown">
+         <button class="btn btn-danger" data-toggle="dropdown">Dropdown Button</button>
+         <ul class="dropdown-menu">
+             <li><a href="">Home</a></li>
+             <li><a href="">About</a></li>
+             <li><a href="">Contact</a></li>
+         </ul>
+
+     </div>
+ </div>
+</body>
+</html>

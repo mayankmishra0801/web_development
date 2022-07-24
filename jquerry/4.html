@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type = "text/css">
+    .ab{
+        height:100px;
+        width:100px;
+        background: red;
+    }
+    .ac{
+        height:100px;
+        width:100px;
+        background: green;
+    }
+</style>  
+</head>
+  <body>
+    <button id="clk1">Alert</button>
+    <button id="clk2">up</button>
+    <button id="clk3">down</button>
+    <button id="clk4">toggle</button>
+    <br>
+    <button id="c21">See Here</button>
+      <button id="c22">Good To SEE</button>
+      
+      <button id = "c23">Good Boy</button>
+
+
+      <button id="id1n">Grow</button>
+
+    </div>
+
+
+
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('#c23').click(function(){
+                $('#box1').toggle();
+            })
+        })
+       
+
+    </script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('#c23').click(function(){
+                $('#box1').slidedown();
+            })
+        })
+
+
+$(document).ready(function(){
+
+                   $('#c21').click(function(){
+                       $('#box1').slideUp();
+                   })
+                   $('#c22').click(function(){
+                       $('#box1').slideDown();
+                   })
+               })
+
+        $(document).ready(function(){
+        $('#clk1').click(function(){
+            alert('Hii');
+        })
+        $('#clk2').click(function(){
+            $('#box1').slideUp();
+        })
+        $('#clk3').click(function(){
+            $('#box1').slideDown();
+        })
+        $('#clk4').click(function(){
+            $('#box1').slideToggle();
+        })
+        })
+
+
+        $(document).ready(function(){
+            $('#id1n').click(function(){
+                $('#box2').slideUp();
+            })
+        })
+    </script>
+    <div class="ab" id ="box1">
+        <div class="ac" id = "box2"></div>
+                     
+    </div>
+  </body>
+  </html>

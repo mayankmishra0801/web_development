@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type = "text/css">
+    .ab{
+        width:100px;
+        height:100px;
+        background-color: red;
+        
+    }
+
+    
+    </style>
+    </head>
+    <body>
+        <button id="clk1">Click 1</button>
+        <button id = "clk2">Click 2</button>
+        <button id = "clk3">Click 3</button>
+        <button id = "clk4">Click 4</button>
+        <button id = "clk5">Click 5</button>
+        <button id = "clk6">Click 6</button>
+        <button id = "clk7">Click 7</button>
+        <button id = "clk8">Click 8</button>
+        <button id = "clk9">Click 9</button>
+        <button id = "clk10">Click 10</button>
+        <button id = "clk11">Click 11</button>
+
+        <br>
+        <div class="ab" id="box1"></div>
+        <input type ="text" id="name">
+        <input type ="text" id="name1">
+        <p id = "print"></p>
+        <p id = "print2"></p>
+<script type ="text/javascript">
+    $(document).ready(function(){
+        $('#clk1').click(function(){
+            $('#box1').addClass('ab');
+        })
+        $('#clk2').click(function(){
+            $('#box1').removeClass('ab');
+        })
+        $('#clk3').click(function(){
+            $('#box1').toggleClass('ab');
+        })
+        $('#clk4').click(function(){
+            $('#box1').css({'background':'blue'});
+        })
+        $('#clk5').click(function(){
+            $('#box1').css({'background':'hotpink','height':'200px'});
+        })
+
+        var i = 1;
+       $('#clk7').click(function(){
+           $('#box1').append("<input type='text' placeholder='Name "+i+"'>");
+           i++;
+       })
+
+       var j = 1;
+       $('#clk8').click(function(){
+           $('#box1').prepend("<input type = 'text' placeholder= 'Name "+j+"'>");
+           j++;
+       })
+       var m = 1;
+       $('#clk9').click(function(){
+           $('#box1').prepend("<input type='text' placeholder = 'Name "+m+"'>");
+           m++;
+       })
+       $('#clk10').click(function(){
+           var a = $('#name').val();
+           $('#print').html(a);
+           $('#print2').text(a);
+           console.log(a);
+
+       })
+       
+       $('#clk11').click(function(){
+           var a = $('#name1').focus();
+       }) 
+       
+          
+})
+</script>
+    </body>
+    </html>

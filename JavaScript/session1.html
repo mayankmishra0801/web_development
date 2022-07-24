@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Flipkart</div>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Gallary</a></li>
+            </ul>
+        
+            
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li><a href="tasklogin.html">Login</a></li>  --> 
+                <li><a style="cursor:pointer;" data-toggle="modal" data-target="#mymodal1">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--
+     <div class="modal fade" id = "mymodal1" role = "dialog">
+         <div class="modal-dialog">
+             <div class = "modal-content">
+                 <div class="modal-header">
+                     <button class="close" data-dismiss="modal">x</button>
+                     <h1>Welcome to our page</h1>
+                 </div>
+                 <div class="modal-body">
+                     <center>
+                         <div id ="login-form">
+                             <div>
+                                 <form>
+                                     <input type ="text" name ="" id="email"placeholder="Enter your Email" pattern = "^[a-z]+[0-9]*[@](gmail|hotmail|yahoo)[.](com|org)">
+                                     <br>
+                                     <input type = "submit" value = "Login">
+                                    </form>
+                             </div>
+                         </div>
+                     </center>
+                 </div>
+             </div>
+         </div>
+     </div>
+    -->
+    <div class="modal fade" id="mymodal1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">x</button>
+               <h1>Welcome to our page</h1>
+            </div>
+            <div class="modal-body">
+              <center>
+                  <div id ="login-form">
+                      <div>
+                        <form>
+                            <input type = "text" name="" id ="email" placeholder="Enter your Email" pattern ="^[a-z]+[0-9]*[@](gmail|hotmail|yahoo)[.](com|org)">
+                            <br>
+                           <!-- <input type = "password" name="" id = "password" placeholder ="Enter your password" pattern="^[a-z][A-Z][0-9]"> -->
+                            <input type = "password" name="" id = "password" placeholder ="Enter your password">
+                            <br>
+                            <input type = "button" onclick="login()" value = "Login">
+                        </form>
+                          
+                          <!-- <button onclick = "login()">Login</button>  -->
+                      </div>
+                  </div>                 
+              <div id="logout-form">
+                  <p id = "print"></p>
+                      <button onclick="logout()">Logout</button>    
+              </div>         
+              </center>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+   <!--
+   
+    <center>
+        <div id = "login-form">
+            <div>
+                <input type ="email" id ="email" placeholder = "Email">
+                <br>
+                <input type = "password" id = "password" placeholder = "Password">
+                <br>
+                <button onclick = "login()">Login</button>
+            </div>
+        </div>
+
+        <div id = "logout-form">
+            <p id = "print"></p>
+                <button onclick = "logout()">Logout</button>
+        </div>
+    </center> 
+-->
+
+<script type ="text/javascript">
+    function login(){
+        var a = document.getElementById('email').value;
+        var b = document.getElementById('password').value;
+
+        if(a == ''){
+            alert('Please fill input Email');
+        }
+        else if(b == ''){
+            alert('Please fill input password');
+        }
+        else{
+            localStorage.setItem('UserEmail',a);
+            location.reload();
+        } //set get remove
+    }
+    var logins = localStorage.getItem('UserEmail');
+    function loginhandle(){
+        if(logins){
+            console.log('yes');
+            document.getElementById('login-form').style.display = none;
+            document.getElementById('logout-form').style.display = block;
+        }
+        else{
+            console.log('no');
+            document.getElementById('login-form').style.display = block;
+            document.getElementById('logout-form').style.display = none;
+        }
+    }
+    loginhandle()
+    function logout(){
+        localStorage.removeItem('UserEmail');
+        location.reload();
+    }
+</script>
+
+<!--
+
+
+    <script type = "text/javascript">
+        function login(){
+            var a = document.getElementById('email').value;
+            var b = document.getElementById('password').value;
+
+            if(a == ''){
+                alert('please fill input Email');
+            }
+            else if(b == ''){
+                alert('please fill input password');
+            }
+            else{
+                localStorage.setItem('UserEmail',a);
+                location.reload();
+            }
+        }
+
+    var logins = localStorage.getItem('UserEmail');
+
+    function loginhandle(){
+        if(logins){
+             document.getElementById('login-form').style.display = 'none';
+             document.getElementById('logout-form').style.display = 'block';
+        }
+        else{
+            document.getElementById("login-form").style.display = 'block';
+            document.getElementById("logout-form").style.display = "none";
+        }
+    }
+    loginhandle()
+function logout(){
+        localStorage.removeItem('UserEmail');
+        loaction.reload();
+    }
+    </script>  -->
+</body>
+</html>

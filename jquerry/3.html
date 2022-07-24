@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type = "text/css">
+    .ab{
+        height:100px;
+        width:100px;
+        background: red;
+    }
+</style>  
+</head>
+  <body>
+    <button id="clk1">Alert</button>
+    <button id="clk2">fadeIn</button>
+    <button id="clk3">fadeout</button>
+    <button id="clk4">fadetoggle</button>
+    <br>
+
+    
+    </div>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+        $('#clk1').click(function(){
+            alert('Hii');
+        })
+        $('#clk2').click(function(){
+            $('#box1').fadeIn();
+        })
+        $('#clk3').click(function(){
+            $('#box1').fadeOut();
+        })
+        $('#clk4').click(function(){
+            $('#box1').fadeToggle();
+        })
+        })
+    </script>
+    <div class="ab" id ="box1">
+
+    </div>
+  </body>
+  </html>

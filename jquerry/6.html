@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type = "text/css">
+    </style>
+   
+
+    </head>
+    <body>
+
+       <input type = "text" id "rs23">
+       <select id = "rs231">
+           <option>New Delhi</option>
+           <option>Noida</option>
+           <option>Kanpur</option>
+       </select>
+       <p id = "rs23"></p>
+       <script>
+           $(document).ready(function(){
+               ('#rs231').keyup(function(){
+                   var n = $('#rs231').val();
+                   $('#rs23').html(n);
+               })
+               $('rs231').change(function(){
+                   var n = $('#rs231').val();
+                   alert(n);
+               })
+           })
+           </script>
+        
+
+
+
+        <input type = "text" id = "name1">
+        <select id = "town">
+            <option>Delhi</option>
+            <option>Town</option>
+            <option>DElhi</option>
+
+        </select>
+        <p id = "print1"></p>
+        <script>
+            $(document).ready(function(){
+                $('#name1').keyup(function(){
+                    var n = $('#name1').val();
+                    $('#print1').html(n);
+                })
+                $('town').change(function(){
+                    var n = $('#town').val();
+                    alert(n);
+                })
+            })
+        </script>
+
+        <input type="text" id="name">
+
+        <select id="city">
+            <option>Ldh</option>
+            <option>Chd</option>
+            <option>Pgw</option>
+        </select>
+
+        <p id="print"></p>
+
+        <script>
+            $(document).ready(function(){
+                $('#name').keyup(function(){
+                    var n = $('#name').val();
+                    $('#print').html(n);
+                })
+
+                $('#city').change(function(){
+                    var n = $('#city').val();
+                    alert(n);
+                })
+
+            })
+        </script>
+
+
+
+
+
+
+    </body>
+    </html>

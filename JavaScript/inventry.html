@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type = "text/css">
+      .card{
+          box-shadow: 0px 0px 5px grey;
+          padding: 15px;
+          margin-top: 50px;
+          border-radius: 5px;
+      }
+  </style>
+</head>
+<body>
+   <div class="col-lg-4">
+       <div class="card">
+           <form>
+               <div class="form-group">
+                   <input type = "text" id = "name" class="form-control" placeholder = "Name">
+               </div>
+               <div class="form-group">
+                <input type = "number" id = "price" class="form-control" placeholder = "Price">
+            </div>
+            <div class="form-group">
+                <select class="form-control" id = "type">
+                    <option>Veg</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type = "button" onclick = "add()" class="btn btn-success">Add</button>
+            </div>
+           </form>
+           <br>
+           <div class="btn-group" id = "show1">
+               <button class="btn">Carret</button>
+               <button class="btn">Redesh</button>
+           </div>
+       </div>
+   </div>
+   <div class="col-lg-4">
+       <br><br>
+       <ul class="list-group">
+           <li class="list-group-item">
+               <button class="close">x</button>
+           </li>
+       </ul>
+
+   </div>
+   <div class="col-lg-4">
+       <div class="card">
+           <form>
+               <div class="form-group">
+                   <input type = "text" id = "name2" class="form-control" placeholder = "Name">
+
+               </div>
+               <div class="form-group">
+                   <input type = "number" id = "price2" class="form-control" placeholder= "Price">
+               </div>
+               <div class="form-group">
+                   <select class="form-control" id = "type2">
+                       <option>Fruits</option>
+                   </select>
+               </div>
+               <div class="form-group">
+                   <button type = "button" onclick = "Add2()" class = "btn btn-success">Add</button>
+               </div>
+           </form>
+           <br>
+           <div class="btn-group" id = "show2">
+               <button class="btn">Apple</button>
+               <button class="btn">Mango</button>
+           </div>
+       </div>
+   </div>
+   <script type = "text/javascript">
+       var vege = [];
+
+       function add(){
+           var name =document.getElementById('name').value;
+           var price = document.getElementById('price').value;
+           var type = document.getElementById('type').value;
+           if(name == '' || price ==''|| type == ''){
+               alert('Please fill all the values');
+           }
+           else{
+               var obj = {Name:name,Price:price,Type:type};
+               //console.log(obj);
+
+               vege.push(obj);
+               showdata1();
+               document.getElementById('name').value = '';
+               documet.getElementById('price').value = '';
+               document.getElementById('name').focus();
+           }
+       }
+
+      
+       function showdata1(){
+
+           var th = '';
+           for(var i = 0;i<vege.length;i++){
+               th+= "<button class = 'btn'>" + vege[i].Name+"</button>";
+           }
+           document.getElementById('show1').innerHTML = th;
+       }
+       showdata1();
+
+       var frut = [];
+       function Add2(){
+           var name = document.getElementById('name2').value;
+           var price = document.getElementById('price2').value;
+           var type = document.getElementById('type2').value;
+           if(name == '' || price == '' || type ==''){
+               alert('Please Fill all the value');
+           }
+           else{
+               var obj = {Name:name,Price:price,Type:type};
+               //console.log(obj);
+               frut.push(obj);
+               showdata2();
+               document.getElementById('name2').value = '';
+               document.getElementById('price2').value = '';
+               document.getElementById('name2').focus();
+
+           }
+       }
+
+       function showdata2(){
+           var th = '';
+           for(var i = 0;i<frut.length;i++){
+               th += "<button class='btn'>"+frut[i].Name+"</button>";
+           }
+           document.getElementById('show2').innerHTML = th;
+       }
+       showdata2();
+   </script>
+</body>
+</html>
+
+

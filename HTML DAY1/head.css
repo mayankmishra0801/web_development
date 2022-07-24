@@ -1,0 +1,27 @@
+.ac{
+    color:green;
+
+}
+.ad{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.ae{
+    height: 100px;
+    width: 100px;
+    background:linear-gradient(to left,blue,green);
+}
+.af{
+    height: 100px;
+    width: 100%;
+    background: radial-gradient(blue,green);
+}
+.ag{
+    height: 100px;
+    width: 100%;
+    background: url('cow.png');
+    background-size: 100px 100px;
+   /* background-repeat: no-repeat; */
+   /* background-position: center; */
+}

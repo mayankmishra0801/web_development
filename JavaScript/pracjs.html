@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+ 
+         <button onclick = "add()">To Add Click Here</button>
+         <p id = "addition1"></p>
+         <script type = "text/javascript">
+             //topic 1
+             var a = 10;
+             var b = 20;
+
+             function add(){
+                 c = a+b;
+                 document.getElementById('addition1').innerHTML = c;
+             }
+         </script>
+
+
+
+
+
+
+      <h1 id = "para1"></h1>
+      <script type = "text/javascript">
+          //topic 2
+         document.getElementById('para1').innerHTML = '<i>Hello World</i>';
+         document.getElementById('para1').style.color = 'blue'; 
+         document.getElementById('para1').style.backgroundColor = 'red';
+      </script>
+
+
+      
+     <button id = "button1">Optional</button>
+     <script type = "text/javascript">
+         //topic 3
+         document.getElementById('button1').disabled = false;
+         document.write('<br>');
+     </script>
+
+
+      <script type = "text/javascript">
+          //topic 4
+          var l = 'Mayank'; //string
+          var m = 50; //integer
+          var c = 50.5 //float
+          var d = true; // boolean
+          var e = ['ca','cb','cc','cd']; //array
+          var f = {Name : 'Mayank',Email:'mayank0801mishra@gmail.com',contact:8529135876};
+          document.write(l);
+          document.write('<br>');
+          document.write(m);
+          document.write('<br>');
+          document.write(c);
+          document.write('<br>');
+          document.write(d);
+          document.write('<br>');
+          document.write(e);
+          document.write('<br>');
+          document.write(f);
+          //how to get the value of object in Js doubt as in f
+          document.write('<br>');
+      </script>
+<script type = "text/javascript">
+    //conditional
+    var var1 = Mango;
+    var var2 = Mango;
+    var var3 = Guava;
+
+    if(var1 = var2){
+        document.write('equal');
+    }
+    if(var1!=var2){
+        document.write('no')
+    }
+    else if(var1 == var2){
+        document.write('no not equal')
+    }
+    else
+    document.write('Mango is my favourite');
+  document.write('<br>');
+</script>
+<script type = "text/javascript">
+    var4 = "Papaya";
+    var5 = "Papaya";
+    var6 = "Litchi";
+
+    if(var4 == var5){
+        if(var4 == var6){
+            document.write("Not equal");
+        }else{
+            document.write("Read again");
+        }}
+        else if(var4!= var5){
+            document.write("Read it")
+        }
+        document.write('<br>');
+    
+</script>
+
+
+
+      <button id = "87d14ls" onclick = "show(this.id)">See Alert</button>
+      <script type = "text/javascript">
+          //topic 5 to get id of button
+          function show(x){
+              alert("Id  of this button is" + x);
+          }
+      </script> 
+
+      <button onclick = "displayr('We will get back to you sortly please wait for a while! If any problem do contact me')">Click Here for Issue</button>
+            <script type = "text/javascript">
+                //topic 6 to display on info after clicking on button
+            function displayr(z){
+                alert("Hello Prepsters"+z);
+            }
+            </script>
+
+
+<input type = "text" onkeyup = "getfunc(this.value)">
+<p id = "462k"></p>
+<script type = "text/javascript">
+    //topic 7 onkeyup topic
+    function getfunc(l){
+        document.getElementById('462k').innerHTML = l
+    }
+</script> 
+
+
+<script type = "text/javascript">
+    //topic 8 array 
+    var js = ['Feb','May','June','july','Aug','Sep'];
+    console.log(js);
+     js.push('October');
+     js.push('November');
+    js.push('December');
+    console.log(js);
+    js.pop('Feb');
+    console.log(js);
+    js.sort(); //capital entry will be sorted first then small letter  
+   console.log(js);
+   js.reverse();
+   console.log(js);
+
+    var java = ['Jan','March'];
+   js = js.concat(java);
+    console.log(js);
+    js.sort();
+    console.log(js);
+
+  js.shift();
+   console.log(js);
+
+    
+</script>
+<!-- Topic Expression in JS -->
+<!--
+    doubt
+    []
+    [a-z]
+    [0-9]
+    [@]
+    [a-z]+ //unlimited
+    [a-z]* //optional
+    [a-z]{10}
+    [a-z]{5,15}
+    [a-z]{5, }
+    [a-z]{ ,15}
+    ^ for validation of same value
+    (gmail|hotmail)
+-->
+<body>
+    <form>
+        <input type = "text" name = "" pattern = "^[a-z]+">
+        <br>
+        <input type = "submit" value = "submit">
+    </form>
+    <form>
+        <input type = "text" name="" pattern = "^[0-9]{10}">
+        <br>
+        <input type = "submit" value = "submit">
+    </form>
+    <form>
+        <input type = "text" name="" pattern = "^[0-9]+">
+        <br>
+        <input type = "submit" value = "submit">
+    </form>
+    <form>
+        <input type = "text" name = "" pattern = "^[A-Z]{5}[0-9]{4}">
+        <br>
+        <input type = "submit" value = "submit">
+    </form>
+    <form>
+        <!--Doubt in creating gmail filling -->
+
+        <input type = "text" name = "" pattern = "^[a-z]+[0-9]*[@](gmail|hotmail|yahoo)[.](com|org)">
+        <br>
+        <input type = "submit" value = "submit">
+    </form>
+
+
+<!--
+  object in JS 
+  JSON KEY Value pair + array
+-->
+
+<script>
+    var a = {Name : 'Naveen',Class : 5, Roll:21};
+    document.write(a.Roll);
+    document.write('<br>');
+    document.write(a.Name);
+    document.write('<br>')
+    document.write(a.Class);
+    document.write('<br>');
+
+    var b = [{Name : "Mayank",Contact:8529135876},{Name:"Mrinal",Contact:9109204678},{Name:"Papa",Contact:9525044656}]
+    document.write(b[0].Name);
+    document.write('<br>');
+    document.write(b[0].Contact);
+    document.write('<br>');
+    document.write(b[1].Name);
+    document.write('<br>');
+    document.write(b[1].Contact);
+    document.write('<br>');
+    document.write(b[2].Name);
+    document.write('<br>');
+    document.write(b[2].Contact);
+    document.write('<br>');
+
+</script>
+
+<script type = "text/javascript">
+    // string in js
+    var letter = "Keep Working Untill you feel satisfied";
+    var charAt1 = letter.charAt(7);
+    console.log(letter);
+      var endswith1 = letter.endsWith('fied');
+      console.log(endswith1);
+      var includes1 = letter.includes("you");
+      console.log(includes1);
+      var indexOf1 = letter.indexOf("feel");
+      console.log(indexOf1);
+      var lastIndexOf1 = letter.lastIndexOf('e');
+      console.log(lastIndexOf1);
+      var length1 = letter.length;
+      console.log(length1);
+      var match1 = letter.match("Untill");
+      console.log(match1);
+      var repeat1 = letter.repeat(3);
+      console.log(repeat1);
+      var replace1 = letter.replace("you","We");
+      console.log(replace1);
+      var search1 = letter.search("Working");
+      console.log(search1);
+      var slice1 = letter.slice(0,4);
+      console.log(slice1);
+      var split1 = 'tea,Coffee,GrrenTea,Red,Yellow';
+      var split2 = split1.split(",");
+      console.log(split1)
+      console.log(split2)
+      console.log(letter.toUpperCase());
+      console.log(letter.toLowerCase());
+
+
+</script>
+<script>
+
+var date1 = new Date();
+document.write(date1);
+
+    console.log(date1.toString());
+    console.log(date1.getFullYear());
+    console.log(date1.getMonth());
+    console.log(date1.getDate());
+    console.log(date1.getHours());
+    console.log(date1.getMinutes());
+    console.log(date1.getSeconds());
+    console.log(date1.getMilliseconds());
+    console.log(date1.getTime());
+    console.log(date1.getDay());
+
+    date1.setDate(15);
+    console.log(date1);
+    date1.setFullYear(2015);
+    console.log(date1);
+    date1.setHours(20);
+    console.log(date1);
+    date1.setMinutes(21);
+    console.log(date1);
+    date1.setSeconds(33);
+    console.log(date1);
+     </script>
+
+
+<script>
+    //doubt
+    console.log(Math.sign(2));
+    console.log(Math.sin(30));
+    console.log(Math.sinh(3));
+    console.log(Math.tan(1));
+    console.log(Math.tanh(1));
+    console.log(Math.cos(3));
+    console.log(Math.cosh(3));
+     //
+     console.log(Math.E);
+     console.log(Math.PI);
+     console.log(Math.SQRT2);
+     console.log(Math.LN2);
+     console.log(Math.LN10);
+     console.log(Math.LOG2E);
+     console.log(Math.LOG10E);
+
+     //
+     var tics = 4.6;
+     console.log(Math.round(tics));
+     console.log(Math.ceil(tics));
+     console.log(Math.floor(tics));
+     console.log(Math.trunc(tics));
+     console.log(Math.random());
+     console.log(Math.floor(Math.random()*100000));
+     //to grenerate otp
+     var max = 999999;
+     var min = 100000;
+     console.log(Math.floor(Math.random()*(max-min+1))+min);
+</script>
+<script>
+    //filtering in array 
+    //doubt
+var array1 = ['Apple','Mango','Banana','Grapes','Kivi','Guava','Lemon','Litchi'];
+console.log(array1);
+array1.shift()
+console.log(array1);
+function arrayFunc(kp){
+    console.log(kp.indexOf('L'));
+    if(kp.indexOf('G') == 0){
+        return (x);
+    }
+}
+var arr2 = array1.filter(arrayFunc);
+  console.log(arr2)
+
+</script>
+
+
+
+<p id = "rs10#w"></p>
+<script type = "text/javascript">
+    // to print date and time
+    function getDate(){
+        var date = new Date();
+        document.getElementById('rs10#w').innerHTML = date;
+    }
+    setInterval(getDate,1000);
+
+</script>
+
+<p id = "rs11#w"></p>
+<script type = "text/javascript">
+    //To display info after an interval
+    function display(){
+        document.getElementById('rs11#w').innerHTML = 'Result will be declare soon';
+    }
+    setTimeout(display,5000);
+</script>
+
+
+
+
+
+
+
+
+<center>
+    <div id = "login-form">
+        <div>
+        <input type = "email" id = "email" placeholder = "Email">
+        <br>
+        <input type = "password" id = "password" placeholder = "Password">
+        <br>
+        <button onclick = "login()">Login</button>
+    </div>
+    </div>
+    <div id = "logout-form">
+        <p id = ""></p>
+        <button onclick = "logout()">Logout</button>
+
+    </div>
+</center>
+
+
+<script type = "text/javascript">
+    //topic storage
+    //doubt
+    function login(){
+
+    }
+    function loginhandle(){
+
+    }
+    function logout(){
+
+    }
+</script>
+
+<script type = "text/javascript">
+    //topic session
+    function login(){
+        var mail = document.getElementById('email').value;
+        var pass = document.getElementById('pass').value;
+
+        if(mail == ''){
+            alert('please fill input Email');
+        }
+        else if(pass == ''){
+            alert('please fill input password');
+        }
+        else{
+            localStorage.setItem('UserEmail',mail);
+            location.reload();
+        }
+    }
+    var logins = localStorage.getItem('UserEmail');
+
+    function loginhandle(){
+        if(logins){
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('logout-form').style.display = 'block';
+        }
+        else{
+            document.getElementById("login-form").style.display = 'block';
+            document.getElementById("logout-form").style.display = "none";
+        }
+    }
+    loginhandle()
+
+    function logout(){
+        localStorage.removeItem('UserEmail');
+        location.reload();
+    }
+</script>
+
+
+<body>
+    <center>
+        <div id = "login-form1">
+            <div>
+                <input type = "email" id = "email1" placeholder="Email">
+                <br>
+                <input type = "password" id = "password1" placeholder = "Password">
+                <br>
+                <button onclick = "login1()">Login</button>
+            </div>
+        </div>
+
+    <div id = "logout-form1">
+        <p id=" "></p>
+        <button onclick="logout1()">Logout</button>
+    </div>
+    </center>
+<script type = "text/javascript">
+
+</script>
+
+
+
+<script type = "text/javascript">
+    function login1(){
+
+
+
+        var mail1 = document.getElementById('email1').value;
+        var pass1 = documnet.getElementById('password1').value;
+        console.log(mail1 + pass1);
+        console.log("<br>");
+
+        if(mail == ''){
+            alert('please fill input Email');
+        }
+        else if(pass == ''){
+            alert('please fill input password');
+        }
+        else{
+            localStorage.setItem('UserEmail',mail);
+            location.reload();
+        }
+    }
+    var logins = localStorage.getItem('UserEmail');
+
+    
+    function loginhandle(){
+        if(logins){
+            document.getElementById('login-form1').style.display = 'none';
+            document.getElementById('logout-form1').style.display = 'block';
+        }
+        else{
+            document.getElementById("login-form1").style.display = 'block';
+            document.getElementById("logout-form1").style.display = "none";
+        }
+
+    }
+    loginhandle()
+    function logout(){
+        localStorage.removeItem('UserEmail');
+        location.reload();
+
+    }
+</script>
+
+<p id = "day34e"></p>
+    <script type = "text/javascript">
+        //  useage of switch
+        //doubt 
+        var day = '';
+        switch(new Date().getDay()){
+            case 0:
+                day = 'Sunday';
+                break;
+                case 1:
+                day = "Monday"
+                break;
+                case 2:
+                day = "Tuesday"
+                break;
+                case 3:
+                day = "Wednesday"
+                break;
+                case 4:
+                day = "Thursday"
+                break;
+                case 5:
+                day = "Friday"
+                break;
+                case 6 :
+                day = "Saturday" 
+                break; 
+                default:
+                day = "World Ends"
+                break;           
+        }
+        document.getElementById("day34e").innerHTML = day;
+    </script>
+
+<input type = "text" id = "rs12v4" placeholder = "Enter Your Name">
+<br>
+<button onclick = "getFocus()">See Focus</button>
+<script type = "text/javascript">
+    //topic focus
+    //doubt
+     function getFocus(){
+         document.getElementById('rs12v4').focus();
+     }
+</script>
+<script type = "text/javascript">
+    //window alert
+    // popup
+
+    if(window.confirm("Press Yes To Continue")){
+        alert('yess');
+    }
+    else{
+        alert('Noo');
+    }
+</script>  
+
+<button onclick = 'high("This is Case 1 Keep Red as a result")'>Window Location</button>
+<p id = "r43l#f"></p>
+<script type = "text/javascript">
+    //doubt
+    function high(k){
+        window.location.href = 'pracjs.html?l=' +k;
+    }
+    var window1 = new URLSearchParams(window.location.search).get('l');
+    document.getElementById('r431#f').innerHTML = window1;
+</script>
+
+<p id = "rs345#w"></p>
+<script type = "text/javascript">
+    function alpha(t1){
+        window.location.href = '10.html?q='+t1;
+
+    }
+    q = naveen
+    console.log(window.location.search);
+    var params = newSearchParams(window.location.search);
+    console.log(params.get('q'));
+
+    var window2 = new URLSearchParams(window.location.search).get('q');
+    document.getElementById('rs345#w').innerHTML = window2;
+
+
+</script>
+<!--
+    conditional
+    for loop start pattern
+-->
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>
