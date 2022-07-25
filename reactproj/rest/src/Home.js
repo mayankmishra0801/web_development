@@ -1,9 +1,21 @@
-
-import React,{useState,useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Navbar from "./Navbar";
+import facebook1 from "./images/facebook.jpg"
+import instagram1 from "./images/download.jpg"
+import twitter1 from "./images/twitter.png"
+import div3burger1 from "./images/burgerdiv3.jpg"
+import cooka from "./images/cook1.jpg"
+import cookb from "./images/cook2.jpg"
+import cookc from "./images/cook3.jpg"
+import burger4 from "./images/burger.jpg"
+import ger1 from "./images/burgerdiv3.jpg"
+import ger2 from "./images/burgerdiv3.jpg"
+import ger3 from "./images/burgerdiv3.jpg"
+
+
 
 function Home(){
-   {/* const [a, seta] = useState("");
+    const [a, seta] = useState("");
     function data(){
       var db = "Mayank"
       seta(db)
@@ -23,14 +35,14 @@ function Home(){
     function myform(e){
       e.preventDefault();
       var data= new FormData(e.currentTarget);
-      var n = data.get();
-      var em = data.get();
-      var p = data.get();
-      var cn1 = data.get();
-      var cn2 = data.get();
-      var ti = data.get();
-      var da = data.get();
-      var na = data.get();
+      var n = data.get("name");
+      var em = data.get("email");
+      var p = data.get("password");
+      var cn1 = data.get("tel");
+      var cn2 = data.get("tel2");
+      var ti = data.get("time");
+      var da = data.get("date");
+      var na = data.get("number");
 
       setb(n);
       setc(em);
@@ -42,7 +54,7 @@ function Home(){
       seti(na);
 
     }
-   */}
+   
 
     return(
         <>
@@ -66,17 +78,17 @@ function Home(){
                vamus lacina odio vestibum vestibulum
             </p>
             <div class="col-lg-4">
-              <img src="./cook1.jpg" class="image-responsive img-circle"/>
+              <img src={cooka} class="image-responsive img-circle"/>
                <h1 className="imgh1">AIDEN HUNTER</h1>
                <p className="imgp1">Founder</p>
             </div>
-            <div class="col-lg-4">
-            <img src="./cook2.jpg" class="image-responsive img-circle"/>
+            <div className="col-lg-4">
+            <img src={cookb} class="image-responsive img-circle"/>
             <h1 className="imgh1">ETHEL RAMSEY</h1>
                <p className="imgp1">Co-Founder</p>
              </div>
-             <div class="col-lg-4">
-            <img src="./cook3.jpg" class="image-responsive img-circle"/>
+             <div className="col-lg-4">
+            <img src={cookc} className="image-responsive img-circle"/>
             <h1 className="imgh1">FANNIE STEWART</h1>
                <p className="imgp1">Co-Founder</p>
              </div>
@@ -85,8 +97,8 @@ function Home(){
          </div>
 
       <div className="Container d1">
-         <div className="col-lg-4">
-
+         <div className="col-lg-4 div3">
+         <img src={div3burger1} className="img-responsive img-circle "/>
          </div>
          
          <div className="div32 col-lg-8">
@@ -103,13 +115,15 @@ function Home(){
 
       <div className="Container d4">
          <div className="col-lg-4">
-         <h1 className="hoh3">Big Burger</h1></div>
+         <h1 className="hoh4">Big Burger</h1></div>
          <div className="col-lg-8">
-            <img src="./" class="image-responsive img-circle"/>
+            <img src={burger4} className="image-responsive img-circle "/>
          </div>
+         </div>
+         <div className="Container col-lg-12 din">
       <div className="col-lg-4 div41">
           <div className="c41">
-            <img src="./images/burg10dollar.jpg" class="img-responsive img-circle"/>
+            <img src={ger1} className="img-responsive img-circle"/>
             <h1 className="div420">$10.00</h1>
             <p className="div421">lorem ipsum doler sit amet<br/>
              consequtoer adjacency wait
@@ -123,7 +137,7 @@ function Home(){
       </div>
       <div className="col-lg-4 div41">
       <div className="c42">
-            <img src="./images/burg10dollar.jpg" class="img-responsive img-circle"/>
+            <img src={ger2} className="img-responsive img-circle"/>
             <h1 className="div420">$10.00</h1>
             <p className="div421">lorem ipsum doler sit amet<br/>
              consequtoer adjacency wait
@@ -135,7 +149,7 @@ function Home(){
       </div>
       <div className="col-lg-4 div41">
       <div className="c43">
-      <img src="./images/burg10dollar.jpg" class="img-responsive img-circle"/>
+      <img src= {ger3} className="img-responsive img-circle"/>
             <h1 className="div420">$10.00</h1>
             <p className="div421">lorem ipsum doler sit amet<br/>
              consequtoer adjacency wait
@@ -149,10 +163,11 @@ function Home(){
             
          
       </div>
+      </div>
 
-    </div>
+   
         
-<div className="Container div5">
+<div className=" div5">
    <p className="hop5">Lorem ipsum dolor amet, consectetur<br/>
    adipiscing elit. Vivamus lacinia odio vitae<br/>
    vestibulum vestibulum.</p>
@@ -165,7 +180,8 @@ function Home(){
    <p className="hop6">Lorem ipsum dolor sit ameit.connector adpisiorcing clit.<br/>
     Vivamus lacina odio vivat vestrinyum vrsetrinum.
    </p>
- {/*  <table className="table">
+<div className=" col-lg-8">
+   <table className="table">
       <thead>
             <tr>
                <th>Name</th>
@@ -191,7 +207,8 @@ function Home(){
          </tr>
       </tbody>
    </table>
-   <div className="col-lg-4">
+   </div>
+   <div className=" col-lg-4">
       <form onSubmit = {myform}>
       <div className="form-group">
       <input type="text" name="name" className="form-control" placeholder="Enter Your Name"/>
@@ -203,10 +220,10 @@ function Home(){
          <input type = "password" name="password" className="form-control" placeholder="Enter Your Password"/>
       </div>
       <div className="form-group">
-         <input type= "tel" name="tel" className="form-control" placeholder="Enter Your Calling Number"/>
+         <input type= "tel" name="tel1" className="form-control" placeholder="Enter Your Calling Number"/>
       </div>
       <div className="form-group">
-         <input type = "tel" name="tel" className="form-control" placeholder="Enter Your Whatsapp Number"/>
+         <input type = "tel" name="tel2" className="form-control" placeholder="Enter Your Whatsapp Number"/>
       </div>
       <div className="form-group">
          <input type ="time" name="time" className="form-control" placeholder="Enter preferred time for calling you"/>
@@ -217,10 +234,12 @@ function Home(){
       <div className="form-group">
          <input type ="number" name="number" className="form-control" placeholder="Enter Your age"/>
       </div>
+      <button className="btn btn-danger" type="submit">Submit Data</button>
       </form>
-    </div>
-    */}
+    
+    
 
+</div>
 </div>
 
 <div className="Container div7">
@@ -231,10 +250,11 @@ function Home(){
        id maximum ex,. Etiam nec dignissim elit, at<br/>
        dignisim enim.
       </p>
-      <li><a href="https://www.facebook.com/"><img src="./images/facebook.jpeg"/></a></li>
-      <li><a href="https://www.instagram.com/"><img src="./images/instagram.png"/></a></li>
-      <li><a href="https://twitter.com/i/flow/login"><img src="./images/twitter.jpeg"/></a></li> 
-
+      <div className="Container col-lg-4 div71">
+      <li><a href="https://www.facebook.com/"><img src={facebook1} /></a></li>
+      <li><a href="https://www.instagram.com/"><img src={instagram1}/></a></li>
+      <li><a href="https://twitter.com/"><img src={twitter1}/></a></li> 
+</div>
    </div>
    <div className="col-lg-3">
       <h1>About</h1>
@@ -259,14 +279,16 @@ function Home(){
       <li><a href="">Privacy</a></li>
    </div>
 
-   </div> 
+ </div>
 
 
 
 
 
 
-    
+
+
+
         </>
     )
 }
